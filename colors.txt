@@ -1,0 +1,12 @@
+Zielony: 
+#59db09
+rgb(89,219,9)
+
+
+Granatowy:
+#000066
+rgb(0,0,102)
+
+Jasny niebieski:
+#aed8ff
+rgb(174, 216, 255)
