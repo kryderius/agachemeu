@@ -334,12 +334,14 @@ nav {
 }
 #mobiletoilet-img {
   width: 70%;
+  height: 100%;
 }
 .mobiletoilet-img-wrapper:hover .mobiletoilet-img {
   transform: scale(1.05);
 }
 #odor-stop-img {
   width: 70%;
+  height: 100%;
 }
 #mobiletoilet-p {
   font-size: 22px;
