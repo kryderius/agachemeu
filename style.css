@@ -533,7 +533,8 @@ a:hover ~ .cursor {
 #contact-addres {
   margin-bottom: 20px;
   display: flex;
-  max-height: 100px;
+  justify-content: center;
+  max-height: 80px;
 }
 #contact-addres-link {
   text-decoration: none;
@@ -546,7 +547,8 @@ a:hover ~ .cursor {
 #contact-phone {
   margin-bottom: 20px;
   display: flex;
-  max-height: 100px;
+  justify-content: center;
+  max-height: 80px;
 }
 #contact-phone-link {
   text-decoration: none;
@@ -558,7 +560,8 @@ a:hover ~ .cursor {
 }
 #contact-mail {
   display: flex;
-  max-height: 100px;
+  justify-content: center;
+  max-height: 80px;
 }
 #contact-mail-link {
   text-decoration: none;
