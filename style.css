@@ -519,6 +519,10 @@ a:hover ~ .cursor {
   border-right: none;
   border-radius: 10px 0px 0px 10px;
 }
+.contact-text-wrapper {
+  max-height: 158px;
+  width: 100%;
+}
 #contact-h3 {
   margin-bottom: 15px;
 }
