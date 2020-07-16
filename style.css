@@ -1246,6 +1246,9 @@ footer {
     line-height: 22px;
     margin-bottom: 10px;
   }
+  .footer2 .nav-ul li #link-nav {
+    font-size: 24px;
+  }
   #footer-h3 {
     font-size: 38px;
   }
