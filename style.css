@@ -1224,7 +1224,7 @@ footer {
     padding: 0px 50px 0px 0px;
   }
   .footer-container2 > .footer-rows > .footer2 > div {
-    justify-content: space-around;
+    justify-content: space-between;
     width: 50%;
   }
   #social-media {
