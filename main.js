@@ -26,7 +26,14 @@ var videoImg = new TimelineMax();
 var videoScale = new TimelineMax();
 var contactSpan = new TimelineMax();
 var contactAnim = new TimelineMax();
+var parallaxTitle = new TimelineMax();
 const controller = new ScrollMagic.Controller();
+var controller2 = new ScrollMagic.Controller({
+  globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
+});
+var controller3 = new ScrollMagic.Controller({
+  globalSceneOptions: { triggerHook: "50%", duration: "50%" },
+});
 
 heroH1
   .from("#hero-h1", 1, {
@@ -152,6 +159,11 @@ contactAnim
     "-=0.5"
   );
 
+parallaxTitle
+  .from("#parallax-h2", 0.5, { opacity: 0, x: "-30px" })
+  .from("#parallax-h2-2", 0.5, { opacity: 0, x: "30px" }, "-=0.2")
+  .from("#parallax-p", 0.5, { opacity: 0, y: "30px" }, "-=0.2");
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -265,6 +277,13 @@ const scene15 = new ScrollMagic.Scene({
   .setTween(contactAnim)
   .addTo(controller);
 
+const scene16 = new ScrollMagic.Scene({
+  triggerElement: ".parallax-title",
+  triggerHook: 0.75,
+})
+  .setTween(parallaxTitle)
+  .addTo(controller);
+
 var pinNav = new ScrollMagic.Scene({
   triggerElement: "nav",
   triggerHook: 0,
@@ -280,3 +299,12 @@ document.addEventListener("mousemove", (e) => {
   );
 });
 */
+
+/* PARALLAX */
+new ScrollMagic.Scene({ triggerElement: ".parallax-section" })
+  .setTween(".parallax-img", { y: "80%", ease: Linear.easeNone })
+  .addTo(controller2);
+
+new ScrollMagic.Scene({ triggerElement: ".parallax-section" })
+  .setTween(".parallax-overlay", { opacity: "0.3", ease: Linear.easeNone })
+  .addTo(controller3);
