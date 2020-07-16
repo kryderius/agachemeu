@@ -1243,8 +1243,14 @@ footer {
     background-color: black;
   }
   .footer2 .nav-ul li {
-    line-height: 20px;
+    line-height: 22px;
     margin-bottom: 10px;
+  }
+  #footer-h3 {
+    font-size: 38px;
+  }
+  #footer-p {
+    font-size: 24px;
   }
   #social-media-img:hover {
     transform: scale(1.1);
