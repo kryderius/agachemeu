@@ -48,6 +48,7 @@ li {
   margin: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 100;
+  mix-blend-mode: difference;
 }
 .hamburger__box {
   width: 40px;
@@ -269,7 +270,7 @@ nav {
 }
 .mobiletoilet-title {
   z-index: 10;
-  margin: 0px 30px;
+  margin-left: 30px;
 }
 .mobiletoilet-hero {
   background-image: url("./img/landscape.jpg");
@@ -277,13 +278,13 @@ nav {
 }
 #mobiletoilet-hero-h1 {
   color: #f2f2f2;
-  font-size: 52px;
+  font-size: 48px;
   margin: 30px 0px 15px 0px;
 }
 #mobiletoilet-subtitle {
   position: relative;
   font-family: "Raleway", sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   color: #59db09;
 }
 #mobiletoilet-subtitle::before {
@@ -297,6 +298,7 @@ nav {
 }
 #mobiletoilet-hero-p {
   color: #f2f2f2;
+  font-size: 18px;
 }
 
 /* ABOUT US */

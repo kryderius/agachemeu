@@ -50,6 +50,26 @@ heroH1
       ease: Power3.easeInOut,
     },
     "-=0.5"
+  )
+  .from(
+    "#mobiletoilet-hero-h1",
+    1,
+    {
+      opacity: 0,
+      y: "-40px",
+      ease: Power3.easeInOut,
+    },
+    "-=1.5"
+  )
+  .from(
+    "#mobiletoilet-subtitle",
+    1,
+    {
+      opacity: 0,
+      y: "40px",
+      ease: Power3.easeInOut,
+    },
+    "-=1.8"
   );
 heroSvg.to("#camper", 20, {
   x: "-100%",
