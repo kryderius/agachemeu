@@ -346,15 +346,56 @@ nav {
   overflow: hidden;
   grid-column: 1/2;
   grid-row: 3/5;
+  position: relative;
 }
 #image-grid-airplane {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .image-grid-wrapper-bg {
   grid-column: 2/3;
   grid-row: 4/5;
-  background: linear-gradient(#ffff, #f2f2f2);
+  background: rgb(242, 242, 242);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#ffffff",GradientType=1);
 }
+.mobiletoilet-about-text {
+  padding: 50px 30px;
+  background-color: #f2f2f2;
+}
+#mobiletoilet-about-subtitle {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  color: #59db09;
+}
+#mobiletoilet-about-h2 {
+  margin: 30px 0px 15px 0px;
+  font-size: 32px;
+}
+#mobiletoilet-about-p {
+  font-size: 18px;
+}
+
 /* ABOUT US */
 .about-us {
   height: auto;
