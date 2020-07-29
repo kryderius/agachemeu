@@ -317,17 +317,30 @@ nav {
   overflow: hidden;
   grid-column: 1/2;
   grid-row: 1/3;
+  position: relative;
 }
 #image-grid-yacht {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: bottom center;
 }
 .image-grid-wrapper-camper {
   overflow: hidden;
   grid-row: 2/4;
+  position: relative;
 }
 #image-grid-camper {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom center;
 }
 .image-grid-wrapper-airplane {
   overflow: hidden;
