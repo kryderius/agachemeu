@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agachem Mobile Toilet - Producent środków czystości</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <nav>
+      <div class="logo">
+        <a href="./"><img src="./img/agachem-logo.png" alt="" /></a>
+      </div>
+      <button class="hamburger">
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
+      <div class="nav-mobile">
+        <ul class="nav-ul">
+          <li><a href="./" id="link-nav">Strona główna</a></li>
+          <li><a href="./o-nas" id="link-nav">O nas</a></li>
+          <li><a href="./produkty" id="link-nav">Produkty</a></li>
+          <li><a href="./wideo" id="link-nav">Wideo</a></li>
+          <li><a href="./kontakt" id="link-nav">Kontakt</a></li>
+        </ul>
+        <div class="translations-mobile">
+          <a href="./" id="flag"
+            ><img
+              src="./img/poland.svg"
+              alt="Tłumaczenie na język polski"
+              id="flag-svg"
+          /></a>
+          <a href="./en/" id="flag"
+            ><img
+              src="./img/england.svg"
+              alt="Translation in English"
+              id="flag-svg"
+          /></a>
+          <a href="./de/" id="flag"
+            ><img
+              src="./img/germany.svg"
+              alt="Übersetzung ins Deutsche"
+              id="flag-svg"
+          /></a>
+          <a href="./cz/" id="flag"
+            ><img src="./img/czech.svg" alt="Překlad do češtiny" id="flag-svg"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero mobiletoilet-hero">
+      <div class="mobiletoilet-overlay"></div>
+      <div class="hero-title mobiletoilet-title">
+        <h3 id="mobiletoilet-subtitle">
+          Mobile Toilet
+        </h3>
+        <h1 id="mobiletoilet-hero-h1">
+          Czystość
+          <br />
+          w podróży
+        </h1>
+        <p id="mobiletoilet-hero-p">
+          Zapewnia komfort i powiew świeżości nawet w najtrudniejszych
+          warunkach.
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.min.js"
+      integrity="sha512-G/DslVCv+cnQaVTGKHAvIbe9YSmz+OTTU3v6nBIMHG4IckIB54qlr228DvtPhw8UYS3ye5lWMtTeGX/Ezk8QdA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-1.9.1.min.js"
+      integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+      integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"
+      integrity="sha256-hDU1pRrmRAcQQgrQqLnXkmix6iw43smaA5KgxJBjG6o="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"
+      integrity="sha256-BCkpwV5o3ac9GC/aFo4/lgrzwRHvUNJaacC42YZSkKw="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"
+      integrity="sha256-hzFNvfa40yrwN2f2YvKFEMOM7ooIaoX9fJwVomCFcBk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"
+      integrity="sha256-BCJAxMBJx9Z4O2l18Bim9FxDIoiKjNq5QkYJ9roEuRQ="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./jquery.easeScroll.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      $("html").easeScroll({
+        frameRate: 60,
+        animationTime: 1000,
+        stepSize: 120,
+        pulseAlgorithm: !0,
+        pulseScale: 8,
+        pulseNormalize: 1,
+        accelerationDelta: 10,
+        accelerationMax: 1,
+        keyboardSupport: !0,
+        arrowScroll: 50,
+      });
+    </script>
+  </body>
+</html>
