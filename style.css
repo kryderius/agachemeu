@@ -48,7 +48,6 @@ li {
   margin: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 100;
-  mix-blend-mode: difference;
 }
 .hamburger__box {
   width: 40px;
@@ -305,6 +304,7 @@ nav {
 .mobiletoilet-about-section {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .mobiletoilet-about-image-grid {
   width: 100%;
@@ -320,6 +320,7 @@ nav {
 }
 #image-grid-yacht {
   width: 100%;
+  object-position: bottom center;
 }
 .image-grid-wrapper-camper {
   overflow: hidden;
@@ -336,7 +337,11 @@ nav {
 #image-grid-airplane {
   width: 100%;
 }
-
+.image-grid-wrapper-bg {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background: linear-gradient(#ffff, #f2f2f2);
+}
 /* ABOUT US */
 .about-us {
   height: auto;
