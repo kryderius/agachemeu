@@ -27,6 +27,9 @@ var videoScale = new TimelineMax();
 var contactSpan = new TimelineMax();
 var contactAnim = new TimelineMax();
 var parallaxTitle = new TimelineMax();
+var mobiletoiletImg = new TimelineMax();
+var mobiletoiletAbout = new TimelineMax();
+var mobiletoiletFeatures = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -184,6 +187,32 @@ parallaxTitle
   .from("#parallax-h2-2", 0.5, { opacity: 0, x: "30px" }, "-=0.2")
   .from("#parallax-p", 0.5, { opacity: 0, y: "30px" }, "-=0.2");
 
+mobiletoiletImg.fromTo(
+  "#mobiletoilet-features-img",
+  1,
+  { y: "50px" },
+  { y: "-50px" }
+);
+mobiletoiletAbout
+  .from("#mobiletoilet-about-subtitle", 0.5, {
+    y: "-30px",
+    opacity: 0,
+  })
+  .from("#mobiletoilet-about-h2", 0.5, { y: "30px", opacity: 0 }, "-=0.2")
+  .from("#mobiletoilet-about-p", 0.5, { x: "50px", opacity: 0 }, "-=0.2");
+
+mobiletoiletFeatures
+  .from("#mobiletoilet-features-h3", 0.5, {
+    y: "-30px",
+    opacity: 0,
+  })
+  .staggerFrom(
+    ".mobiletoilet-features-p",
+    0.5,
+    { x: "-30px", opacity: 0, stagger: "0.2" },
+    "-=0.2"
+  );
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -302,6 +331,28 @@ const scene16 = new ScrollMagic.Scene({
   triggerHook: 0.75,
 })
   .setTween(parallaxTitle)
+  .addTo(controller);
+
+const scene17 = new ScrollMagic.Scene({
+  triggerElement: ".mobiletoilet-features-section",
+  triggerHook: 0.5,
+  duration: "100%",
+})
+  .setTween(mobiletoiletImg)
+  .addTo(controller);
+
+const scene18 = new ScrollMagic.Scene({
+  triggerElement: ".mobiletoilet-about-text",
+  triggerHook: 0.75,
+})
+  .setTween(mobiletoiletAbout)
+  .addTo(controller);
+
+const scene19 = new ScrollMagic.Scene({
+  triggerElement: ".mobiletoilet-features-section",
+  triggerHook: 0.5,
+})
+  .setTween(mobiletoiletFeatures)
   .addTo(controller);
 
 var pinNav = new ScrollMagic.Scene({

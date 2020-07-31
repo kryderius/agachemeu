@@ -1,5 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 /* Mobile */
 *,
 *::before,
@@ -11,8 +12,8 @@
 h1,
 h2,
 h3 {
-  font-family: "MuseoModerno", sans-serif;
-  font-size: 42px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
   font-weight: 400;
   line-height: 100%;
 }
@@ -35,7 +36,7 @@ p {
 }
 li {
   text-decoration: none;
-  font-family: "MuseoModerno", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 32px;
   overflow: hidden;
 }
@@ -505,7 +506,7 @@ nav {
 }
 .product-btn {
   width: 183px;
-  height: 48px;
+  height: auto;
   display: flex;
   overflow: hidden;
   background-color: #f2f2f2;
@@ -526,8 +527,8 @@ nav {
   text-decoration: none;
   color: black;
   padding: 5px 10px;
-  font-family: "MuseoModerno", sans-serif;
-  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
   z-index: 10;
 }
 a:hover ~ .cursor {
@@ -535,8 +536,58 @@ a:hover ~ .cursor {
   height: 200px;
 }
 
+/* MOBILETOILET FEATURES SECTION */
+.mobiletoilet-features-section {
+  padding: 50px 30px;
+  background-image: url("./img/mobiletoilet-bg-svg.svg");
+  background-size: cover;
+  overflow: hidden;
+}
+#mobiletoilet-features-h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+#mobiletoilet-features-h3::after {
+  content: ".";
+  color: #59db09;
+}
+.mobiletoilet-features-p {
+  display: flex;
+  margin-bottom: 15px;
+}
+.mobiletoilet-features-text {
+  margin-bottom: 50px;
+}
+#mobiletoilet-features-p {
+  font-size: 18px;
+}
+#mobiletoilet-features-arrow {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.mobiletoilet-features-img {
+  position: relative;
+  z-index: 10;
+}
+#mobiletoilet-features-img {
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  transition: transform 0.8s ease-out;
+}
+#mobiletoilet-features-circles {
+  position: absolute;
+  width: 110%;
+  height: auto;
+  top: 40px;
+  left: -20px;
+  z-index: -1;
+}
+
 /* 2in1 PARALLAX */
 .parallax-section {
+  display: none;
   position: relative;
   overflow: hidden;
   height: 600px;
@@ -636,7 +687,7 @@ a:hover ~ .cursor {
   width: 40px;
 }
 #feature-h5 {
-  font-family: "MuseoModerno", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -1051,7 +1102,7 @@ footer {
     width: 60px;
   }
   #feature-h5 {
-    font-family: "MuseoModerno", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 22px;
   }
@@ -1060,8 +1111,36 @@ footer {
     margin-top: 15px;
   }
 
+  /* MOBILETOILET FEATURES LAPTOP */
+  .mobiletoilet-features-section {
+    padding: 100px 80px;
+  }
+  .mobiletoilet-features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobiletoilet-features-img {
+    text-align: center;
+    width: 50%;
+  }
+  .mobiletoilet-features-text {
+    width: 50%;
+  }
+  #mobiletoilet-features-img {
+    width: 60%;
+  }
+  #mobiletoilet-features-p {
+    font-size: 22px;
+  }
+  #mobiletoilet-features-circles {
+    width: 80%;
+    left: 10%;
+  }
+
   /* 2in1 PARALLAX */
   .parallax-section {
+    display: none;
     position: relative;
     overflow: hidden;
     height: 600px;
@@ -1290,6 +1369,21 @@ footer {
   #camper {
     z-index: 10;
   }
+
+  /* HERO MOBILETOILET DESKTOP */
+  .mobiletoilet-hero {
+    background-image: url("./img/landscape.jpg");
+  }
+  #mobiletoilet-hero-h1 {
+    font-size: 52px;
+  }
+  #mobiletoilet-subtitle {
+    font-size: 28px;
+  }
+  #mobiletoilet-hero-p {
+    font-size: 22px;
+  }
+
   /* ABOUT US */
   .about-us {
     background-color: #f2f2f2;
@@ -1390,13 +1484,39 @@ footer {
     width: 60px;
   }
   #feature-h5 {
-    font-family: "MuseoModerno", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
   }
   #feature-p {
     font-size: 18px;
     margin-top: 15px;
+  }
+
+  /* MOBILETOILET FEATURES DESKTOP */
+  .mobiletoilet-features-section {
+    padding: 100px 120px;
+  }
+  .mobiletoilet-features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobiletoilet-features-img {
+    text-align: center;
+    width: 50%;
+  }
+  .mobiletoilet-features-text {
+    width: 50%;
+  }
+  #mobiletoilet-features-img {
+    width: 60%;
+  }
+  #mobiletoilet-features-p {
+    font-size: 22px;
+  }
+  #mobiletoilet-features-h3 {
+    font-size: 48px;
   }
 
   /* VIDEO */
