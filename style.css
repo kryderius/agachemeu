@@ -539,8 +539,7 @@ a:hover ~ .cursor {
 /* MOBILETOILET FEATURES SECTION */
 .mobiletoilet-features-section {
   padding: 50px 30px;
-  background-image: url("./img/mobiletoilet-bg-svg.svg");
-  background-size: cover;
+  background-color: #ffffff;
   overflow: hidden;
 }
 #mobiletoilet-features-h3 {
@@ -583,6 +582,66 @@ a:hover ~ .cursor {
   top: 40px;
   left: -20px;
   z-index: -1;
+}
+
+/* MOBILETOILET 2IN1 SECTION */
+.mobiletoilet-twoinone-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px;
+  height: 100vh;
+  background-image: url("./img/mobiletoilet-bg-svg.svg");
+  background-size: cover;
+}
+.mobiletoilet-twoinone-images {
+  position: relative;
+  height: auto;
+}
+.demko {
+  height: 100vh;
+}
+
+#twoinone-toiletseat-1 {
+  width: 100%;
+  height: auto;
+}
+#twoinone-toiletseat-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+#twoinone-toiletseat-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#twoinone-h3 {
+  font-size: 32px;
+  margin-top: 50px;
+}
+#twoinone-h3::after {
+  content: ".";
+  color: #59db09;
+}
+#twoinone-p {
+  font-size: 22px;
+  color: #59db09;
+  margin: 30px 0px 15px 0px;
+}
+#twoinone-p-1 {
+  font-size: 18px;
+}
+#twoinone-p-2 {
+  font-size: 18px;
+}
+#twoinone-p-3 {
+  font-size: 18px;
 }
 
 /* 2in1 PARALLAX */
@@ -1070,6 +1129,39 @@ footer {
   #mobiletoilet-p {
     font-size: 18px;
   }
+
+  /* MOBILETOILET 2IN1 SECTION LAPTOP */
+  .mobiletoilet-twoinone-section {
+    padding: 50px 80px;
+    display: flex;
+    align-items: center;
+  }
+  .mobiletoilet-twoinone-container {
+    display: flex;
+  }
+  .mobiletoilet-twoinone-images {
+    width: 50%;
+  }
+  .mobiletoilet-twoinone-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0px 80px;
+  }
+  #twoinone-h3 {
+    margin-top: 0;
+  }
+  #twoinone-p-1 {
+    font-size: 22px;
+  }
+  #twoinone-p-2 {
+    font-size: 22px;
+  }
+  #twoinone-p-3 {
+    font-size: 22px;
+  }
+
   /* FEATURES */
   .features-container {
     padding-left: 40px;
@@ -1452,6 +1544,23 @@ footer {
   }
   #mobiletoilet-p {
     font-size: 24px;
+  }
+
+  /* MOBILETOILET 2IN1 SECTION DESKTOP */
+  .mobiletoilet-twoinone-section {
+    padding: 100px 120px;
+  }
+  .mobiletoilet-twoinone-container {
+    padding: 0;
+  }
+  .mobiletoilet-twoinone-text {
+    padding: 0px 80px;
+  }
+  #twoinone-h3 {
+    font-size: 48px;
+  }
+  #twoinone-p {
+    font-size: 28px;
   }
 
   /* FEATURES */
