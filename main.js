@@ -369,7 +369,6 @@ const scene20 = new ScrollMagic.Scene({
   triggerHook: 0,
   duration: "100%",
 })
-  .addIndicators()
   .setPin(".mobiletoilet-twoinone-section")
   .setTween(mobiletoiletTwoinone)
   .addTo(controller);
