@@ -397,3 +397,10 @@ new ScrollMagic.Scene({ triggerElement: ".parallax-section" })
 new ScrollMagic.Scene({ triggerElement: ".parallax-section" })
   .setTween(".parallax-overlay", { opacity: "0.3", ease: Linear.easeNone })
   .addTo(controller3);
+
+new ScrollMagic.Scene({ triggerElement: ".image-gallery" })
+  .setTween("#image1, #image2, #image3, #image4, #image5", {
+    y: "-20%",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller2);
