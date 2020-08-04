@@ -31,6 +31,7 @@ var mobiletoiletImg = new TimelineMax();
 var mobiletoiletAbout = new TimelineMax();
 var mobiletoiletFeatures = new TimelineMax();
 var mobiletoiletTwoinone = new TimelineMax();
+var parallaxOpacity = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -222,6 +223,13 @@ mobiletoiletTwoinone
   .from("#twoinone-toiletseat-3", 1, { opacity: 0 })
   .from("#twoinone-p-3", 1, { opacity: 0 }, "-=1");
 
+parallaxOpacity.fromTo(
+  ".mobiletoilet-parallax-overlay",
+  1,
+  { opacity: 0 },
+  { opacity: 1 }
+);
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -373,6 +381,14 @@ const scene20 = new ScrollMagic.Scene({
   .setTween(mobiletoiletTwoinone)
   .addTo(controller);
 
+const scene21 = new ScrollMagic.Scene({
+  triggerElement: ".mobiletoilet-parallax",
+  triggerHook: 0.5,
+  duration: "300px",
+})
+  .setTween(parallaxOpacity)
+  .addTo(controller);
+
 var pinNav = new ScrollMagic.Scene({
   triggerElement: "nav",
   triggerHook: 0,
@@ -403,4 +419,8 @@ new ScrollMagic.Scene({ triggerElement: ".image-gallery" })
     y: "-20%",
     ease: Linear.easeNone,
   })
+  .addTo(controller2);
+
+new ScrollMagic.Scene({ triggerElement: ".mobiletoilet-parallax" })
+  .setTween(".mobiletoilet-parallax-img", { y: "50%", ease: Linear.easeNone })
   .addTo(controller2);

@@ -664,6 +664,43 @@ a:hover ~ .cursor {
   font-size: 18px;
 }
 
+/* MOBILETOILET PARALLAX MOBILE */
+.mobiletoilet-parallax {
+  width: 100%;
+  height: 512px;
+  position: relative;
+  overflow: hidden;
+}
+.mobiletoilet-parallax-img {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-image: url("./img/camper-background-mobiletoilet.jpg");
+  background-size: cover;
+}
+.mobiletoilet-parallax-overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mobiletoilet-parallax-text {
+  position: absolute;
+  width: 80%;
+  height: 200px;
+  top: 50%;
+  right: 0;
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  padding: 30px 15px;
+  z-index: 10;
+}
+
 /* 2in1 PARALLAX */
 .parallax-section {
   display: none;
