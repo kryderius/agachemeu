@@ -461,6 +461,7 @@ nav {
   -webkit-box-shadow: -20px 20px 0px 0px rgba(0, 0, 102, 1);
   -moz-box-shadow: -20px 20px 0px 0px rgba(0, 0, 102, 1);
   box-shadow: -20px 20px 0px 0px #dbdbdb;
+  border-radius: 50px;
   transition: transform 0.5s cubic-bezier(0.14, 0.99, 0.43, 0.99);
 }
 .mobiletoilet-img-wrapper:hover {
@@ -586,6 +587,8 @@ a:hover ~ .cursor {
 
 /* MOBILETOILET 2IN1 SECTION */
 .mobiletoilet-twoinone-section {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -597,9 +600,26 @@ a:hover ~ .cursor {
   background-size: cover;
   */
 }
+.mobiletoilet-twoinone-text {
+  z-index: 10;
+}
+.dotted-background {
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 1;
+}
+#dotted-background {
+  width: 300%;
+}
+
 .mobiletoilet-twoinone-images {
   position: relative;
   height: auto;
+  z-index: 10;
 }
 
 #twoinone-toiletseat-1 {
@@ -1222,6 +1242,13 @@ footer {
     display: flex;
     align-items: center;
   }
+  .dotted-background {
+    top: 0;
+    left: 0%;
+  }
+  #dotted-background {
+    width: 100%;
+  }
   .mobiletoilet-twoinone-container {
     display: flex;
   }
@@ -1498,7 +1525,7 @@ footer {
   #contact-span2 {
     position: absolute;
     top: 25%;
-    right: 10%;
+    right: 30%;
     font-family: "MuseoModerno", sans-serif;
     font-size: 200px;
     font-weight: 700;
