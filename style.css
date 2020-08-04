@@ -851,6 +851,19 @@ a:hover ~ .cursor {
   position: relative;
   overflow: hidden;
 }
+.contact-container {
+  position: relative;
+}
+.dotted-map {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: -2;
+  opacity: 0.05;
+}
+#dotted-map {
+  width: 200%;
+}
 #contact-span1 {
   position: absolute;
   top: 10%;
@@ -879,9 +892,11 @@ a:hover ~ .cursor {
   width: 100%;
   padding-right: 30px;
   text-align: center;
+  z-index: 11;
 }
 #contact-img-svg {
   width: 80%;
+  z-index: 12;
 }
 .contact-text {
   margin-top: 50px;
@@ -1462,6 +1477,13 @@ footer {
   .contact-section {
     padding: 120px 0px 120px 120px;
   }
+  .dotted-map {
+    top: -10%;
+    left: -10%;
+  }
+  #dotted-map {
+    width: 100%;
+  }
   #contact-span1 {
     position: absolute;
     top: 10%;
@@ -1820,6 +1842,10 @@ footer {
   /* CONTACT SECTION */
   .contact-section {
     padding: 120px 0px 120px 120px;
+  }
+  .dotted-map {
+    top: -20%;
+    left: 30%;
   }
   #contact-span1 {
     position: absolute;
