@@ -192,6 +192,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  background-image: url("./img/hero-bg-white.svg");
+  background-size: cover;
 }
 
 .hero-img {
