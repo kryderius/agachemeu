@@ -32,6 +32,9 @@ var mobiletoiletAbout = new TimelineMax();
 var mobiletoiletFeatures = new TimelineMax();
 var mobiletoiletTwoinone = new TimelineMax();
 var parallaxOpacity = new TimelineMax();
+var awardsImg = new TimelineMax();
+var awardsText = new TimelineMax();
+var awardsParallax = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -229,6 +232,11 @@ parallaxOpacity.fromTo(
   { opacity: 0 },
   { opacity: 1 }
 );
+awardsImg.fromTo(".awards-img", 1, { y: "10%" }, { y: "-20%" });
+awardsText
+  .from("#awards-h3", 0.5, { opacity: 0, y: "30px" })
+  .from("#awards-h2", 0.5, { opacity: 0, y: "-30px" }, "-=0.2")
+  .from("#awards-p", 0.5, { opacity: 0, x: "30px" }, "-=0.2");
 
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
@@ -338,7 +346,7 @@ const scene14 = new ScrollMagic.Scene({
 
 const scene15 = new ScrollMagic.Scene({
   triggerElement: ".contact-text",
-  triggerHook: 0.5,
+  triggerHook: 0.75,
 })
   .setTween(contactAnim)
   .addTo(controller);
@@ -389,6 +397,21 @@ const scene21 = new ScrollMagic.Scene({
   .setTween(parallaxOpacity)
   .addTo(controller);
 
+const scene22 = new ScrollMagic.Scene({
+  triggerElement: ".awards-section",
+  triggerHook: 0.5,
+  duration: "100%",
+})
+  .setTween(awardsImg)
+  .addTo(controller);
+
+const scene23 = new ScrollMagic.Scene({
+  triggerElement: ".awards-wrapper",
+  triggerHook: 0.75,
+})
+  .setTween(awardsText)
+  .addTo(controller);
+
 var pinNav = new ScrollMagic.Scene({
   triggerElement: "nav",
   triggerHook: 0,
@@ -417,6 +440,13 @@ new ScrollMagic.Scene({ triggerElement: ".parallax-section" })
 new ScrollMagic.Scene({ triggerElement: ".image-gallery" })
   .setTween("#image1, #image2, #image3, #image4, #image5", {
     y: "-20%",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller2);
+
+new ScrollMagic.Scene({ triggerElement: ".awards-section" })
+  .setTween(".awards-parallax-img", {
+    y: "30%",
     ease: Linear.easeNone,
   })
   .addTo(controller2);
