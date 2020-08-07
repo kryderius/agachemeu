@@ -294,7 +294,6 @@ const scene3 = new ScrollMagic.Scene({
   triggerElement: ".hero-title",
   triggerHook: 0,
 })
-  .addIndicators()
   .setTween(nav)
   .addTo(controller);
 
