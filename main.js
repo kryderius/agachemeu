@@ -35,6 +35,8 @@ var parallaxOpacity = new TimelineMax();
 var awardsImg = new TimelineMax();
 var awardsText = new TimelineMax();
 var awardsParallax = new TimelineMax();
+var aboutPageHeroImg = new TimelineMax();
+var aboutPageSection1Img = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -238,6 +240,14 @@ awardsText
   .from("#awards-h2", 0.5, { opacity: 0, y: "-30px" }, "-=0.2")
   .from("#awards-p", 0.5, { opacity: 0, x: "30px" }, "-=0.2");
 
+aboutPageHeroImg.fromTo("#about-hero-img1", 1, { y: "0" }, { y: "-40%" });
+aboutPageSection1Img.fromTo(
+  ".about-page-section1-image2",
+  1,
+  { y: "0" },
+  { y: "-40%" }
+);
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -410,6 +420,22 @@ const scene23 = new ScrollMagic.Scene({
   triggerHook: 0.75,
 })
   .setTween(awardsText)
+  .addTo(controller);
+
+const scene24 = new ScrollMagic.Scene({
+  triggerElement: ".about-hero-imgs",
+  triggerHook: 0.5,
+  duration: "100%",
+})
+  .setTween(aboutPageHeroImg)
+  .addTo(controller);
+
+const scene25 = new ScrollMagic.Scene({
+  triggerElement: ".about-page-section1-imgs",
+  triggerHook: 0.75,
+  duration: "100%",
+})
+  .setTween(aboutPageSection1Img)
   .addTo(controller);
 
 var pinNav = new ScrollMagic.Scene({
