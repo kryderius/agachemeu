@@ -37,6 +37,8 @@ var awardsText = new TimelineMax();
 var awardsParallax = new TimelineMax();
 var aboutPageHeroImg = new TimelineMax();
 var aboutPageSection1Img = new TimelineMax();
+var aboutHeroText = new TimelineMax();
+var aboutSection1Text = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -240,13 +242,39 @@ awardsText
   .from("#awards-h2", 0.5, { opacity: 0, y: "-30px" }, "-=0.2")
   .from("#awards-p", 0.5, { opacity: 0, x: "30px" }, "-=0.2");
 
-aboutPageHeroImg.fromTo("#about-hero-img1", 1, { y: "0" }, { y: "-40%" });
+aboutPageHeroImg.fromTo(".about-hero-image2", 1, { y: "0" }, { y: "-40%" });
 aboutPageSection1Img.fromTo(
   ".about-page-section1-image2",
   1,
   { y: "0" },
   { y: "-40%" }
 );
+
+aboutHeroText
+  .from("#about-hero-h3", 0.5, {
+    y: "-30px",
+    opacity: 0,
+  })
+  .from("#about-hero-h1", 0.5, { y: "30px", opacity: 0 }, "-=0.2")
+  .from("#about-hero-p", 0.5, { x: "50px", opacity: 0 }, "-=0.2");
+
+aboutSection1Text
+  .from(".about-page-section1-text > #about-hero-h3", 0.5, {
+    y: "-30px",
+    opacity: 0,
+  })
+  .from(
+    ".about-page-section1-text > #about-hero-h1",
+    0.5,
+    { y: "30px", opacity: 0 },
+    "-=0.2"
+  )
+  .from(
+    ".about-page-section1-text > #about-hero-p",
+    0.5,
+    { x: "50px", opacity: 0 },
+    "-=0.2"
+  );
 
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
@@ -436,6 +464,13 @@ const scene25 = new ScrollMagic.Scene({
   duration: "100%",
 })
   .setTween(aboutPageSection1Img)
+  .addTo(controller);
+
+const scene26 = new ScrollMagic.Scene({
+  triggerElement: ".about-page-section1-text",
+  triggerHook: 0.75,
+})
+  .setTween(aboutSection1Text)
   .addTo(controller);
 
 var pinNav = new ScrollMagic.Scene({
