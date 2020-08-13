@@ -263,18 +263,8 @@ aboutSection1Text
     y: "-30px",
     opacity: 0,
   })
-  .from(
-    ".about-page-section1-text > #about-hero-h1",
-    0.5,
-    { y: "30px", opacity: 0 },
-    "-=0.2"
-  )
-  .from(
-    ".about-page-section1-text > #about-hero-p",
-    0.5,
-    { x: "50px", opacity: 0 },
-    "-=0.2"
-  );
+  .from("#about-hero-section-h1", 0.5, { y: "30px", opacity: 0 }, "-=0.2")
+  .from("#about-hero-section-p", 0.5, { x: "50px", opacity: 0 }, "-=0.2");
 
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",

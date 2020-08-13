@@ -433,7 +433,8 @@ nav {
   grid-gap: 30px;
 }
 #logos {
-  height: 40px;
+  max-width: 80%;
+  min-width: 70%;
 }
 .logos-desktop {
   display: none;
@@ -575,20 +576,22 @@ a:hover ~ .cursor {
 }
 .mobiletoilet-features-img {
   position: relative;
+  height: 400px;
   z-index: 10;
+  text-align: center;
 }
 #mobiletoilet-features-img {
-  width: 100%;
+  width: 50%;
   height: auto;
   z-index: 10;
   transition: transform 0.8s ease-out;
 }
 #mobiletoilet-features-circles {
   position: absolute;
-  width: 110%;
+  width: 100%;
   height: auto;
-  top: 40px;
-  left: -20px;
+  top: -20%;
+  left: 0;
   z-index: -1;
 }
 
@@ -855,6 +858,7 @@ a:hover ~ .cursor {
 /* FEATURES */
 .features-section {
   padding: 100px 0px;
+  overflow: hidden;
 }
 .features-container {
   display: flex;
@@ -873,7 +877,7 @@ a:hover ~ .cursor {
   transform: rotate(-90deg);
 }
 .features-list {
-  padding-right: 15px;
+  padding-right: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -1154,6 +1158,10 @@ footer {
 #footer-logo {
   width: 30%;
 }
+.footer-rows {
+  border-bottom: 2px #59db09 solid;
+  padding-bottom: 30px;
+}
 .footer-container2 {
   width: 100%;
   z-index: 10;
@@ -1241,7 +1249,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0px 30px;
   background-image: url("/img/background-2.jpg");
   background-size: cover;
@@ -1283,12 +1291,19 @@ footer {
   color: #59db09;
 }
 #about-hero-h1 {
-  font-size: 38px;
+  font-size: 48px;
   margin: 5px 0px 10px 0px;
 }
 #about-hero-h1::after {
   content: ".";
   color: #59db09;
+}
+#about-hero-section-h1 {
+  font-size: 32px;
+  margin: 5px 0px 10px 0px;
+}
+#about-hero-section-p {
+  font-size: 18px;
 }
 #about-hero-p {
   font-size: 18px;
@@ -1312,7 +1327,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 40%;
-  width: 60%;
+  width: 50%;
   max-width: 500px;
 }
 
@@ -1358,6 +1373,104 @@ footer {
   width: 100%;
   height: auto;
 }
+
+/* PRODUCTS PAGE MOBILE */
+.products-hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products-hero-mobiletoilet {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 30px;
+}
+.products-hero-mobiletoilet-img {
+  background-image: url("/img/mobiletoilet-gallery-1.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.products-hero-odorstop {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 30px;
+}
+.products-hero-odorstop-img {
+  background-image: url("/img/OdorStop1.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+#products-h3 {
+  font-size: 32px;
+}
+#products-p {
+  font-size: 18px;
+  margin: 10px 0px 30px 0px;
+}
+.products-hero-mobiletoilet-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+.products-hero-odorstop-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+/*
+.products-hero-odorstop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+.products-hero-mobiletoilet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}*/
 
 /* Tablets */
 @media screen and (min-width: 768px) {
@@ -1415,13 +1528,13 @@ footer {
     background-image: url("/img/landscape.jpg");
   }
   #mobiletoilet-hero-h1 {
-    font-size: 52px;
+    font-size: 58px;
   }
   #mobiletoilet-subtitle {
     font-size: 28px;
   }
   #mobiletoilet-hero-p {
-    font-size: 22px;
+    font-size: 28px;
   }
 
   /* ABOUT US */
@@ -1620,6 +1733,7 @@ footer {
   .mobiletoilet-features-img {
     text-align: center;
     width: 50%;
+    height: auto;
   }
   .mobiletoilet-features-text {
     width: 50%;
@@ -1631,8 +1745,8 @@ footer {
     font-size: 22px;
   }
   #mobiletoilet-features-circles {
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    left: 0;
   }
 
   /* MOBILETOILET PARALLAX LAPTOP */
@@ -1981,7 +2095,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 40%;
-    width: 60%;
+    width: 50%;
   }
 
   #about-hero-img1 {
@@ -2006,10 +2120,17 @@ footer {
     background-color: #59db09;
   }
   #about-hero-h1 {
-    font-size: 52px;
+    font-size: 58px;
     margin: 30px 0px 15px 0px;
   }
   #about-hero-p {
+    font-size: 28px;
+  }
+  #about-hero-section-h1 {
+    font-size: 48px;
+    margin: 30px 0px 15px 0px;
+  }
+  #about-hero-section-p {
     font-size: 22px;
   }
 
@@ -2048,6 +2169,151 @@ footer {
   #section1-image2 {
     width: 100%;
     height: auto;
+  }
+  /* PRODUCTS PAGE MOBILE */
+  .products-hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .products-hero-mobiletoilet {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 80px;
+    overflow: hidden;
+  }
+  .products-hero-mobiletoilet-img {
+    background-image: url("/img/mobiletoilet-gallery-1.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transition: transform 0.5s ease;
+  }
+  .products-hero-odorstop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 80px;
+    overflow: hidden;
+  }
+  .products-hero-odorstop-img {
+    background-image: url("/img/OdorStop1.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transition: transform 0.5s ease;
+  }
+  #products-h3 {
+    font-size: 52px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  #products-p {
+    font-size: 22px;
+    margin: 10px 0px 30px 0px;
+    opacity: 0;
+  }
+  .products-hero-mobiletoilet-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+    transition: all 0.2s ease-out;
+  }
+  .products-hero-odorstop-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+    transition: all 0.2s ease-out;
+  }
+  .products-btn-hover {
+    opacity: 0;
+  }
+
+  .products-hero-mobiletoilet:hover .products-hero-mobiletoilet-overlay {
+    opacity: 1;
+  }
+  .products-hero-odorstop:hover .products-hero-odorstop-overlay {
+    opacity: 1;
+  }
+  .products-hero-odorstop:hover #products-h3,
+  .products-hero-odorstop:hover #products-p {
+    animation: products 0.2s ease-out forwards;
+  }
+  .products-hero-mobiletoilet:hover #products-h3,
+  .products-hero-mobiletoilet:hover #products-p {
+    animation: products 0.2s ease-out forwards;
+  }
+  .products-hero-mobiletoilet:hover .products-btn-hover {
+    animation: button 0.2s ease-out forwards;
+  }
+  .products-hero-odorstop:hover .products-btn-hover {
+    animation: button 0.2s ease-out forwards;
+  }
+  .products-hero-odorstop:hover .products-hero-odorstop-img {
+    transform: scale(1.1);
+  }
+  .products-hero-mobiletoilet:hover .products-hero-mobiletoilet-img {
+    transform: scale(1.1);
+  }
+  @keyframes products {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-25%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes button {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(25%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -2106,13 +2372,13 @@ footer {
     background-image: url("/img/landscape.jpg");
   }
   #mobiletoilet-hero-h1 {
-    font-size: 52px;
+    font-size: 82px;
   }
   #mobiletoilet-subtitle {
     font-size: 28px;
   }
   #mobiletoilet-hero-p {
-    font-size: 22px;
+    font-size: 38px;
   }
 
   /* ABOUT US */
@@ -2461,9 +2727,15 @@ footer {
     font-size: 28px;
   }
   #about-hero-h1 {
-    font-size: 52px;
+    font-size: 82px;
   }
   #about-hero-p {
+    font-size: 38px;
+  }
+  #about-hero-section-h1 {
+    font-size: 48px;
+  }
+  #about-hero-section-p {
     font-size: 22px;
   }
   .about-hero-imgs {
@@ -2480,7 +2752,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 40%;
-    width: 60%;
+    width: 50%;
   }
 
   #about-hero-img1 {
@@ -2495,5 +2767,13 @@ footer {
   /* ABOUT PAGE SECTION1 DESKTOP */
   .about-page-section1 {
     padding: 100px 120px;
+  }
+
+  /* PRODUCTS PAGE DESKTOP */
+  .products-hero-odorstop {
+    padding: 0px 120px;
+  }
+  .products-hero-mobiletoilet {
+    padding: 0px 120px;
   }
 }
