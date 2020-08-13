@@ -92,7 +92,7 @@ heroSvg2.from("#camper", 1, {
 });
 
 nav
-  .to("nav", 1, {
+  .to("nav", 0.5, {
     padding: "0% 3%",
     height: "100px",
     ease: Back.easeInOut,
@@ -504,4 +504,11 @@ new ScrollMagic.Scene({ triggerElement: ".awards-section" })
 
 new ScrollMagic.Scene({ triggerElement: ".mobiletoilet-parallax" })
   .setTween(".mobiletoilet-parallax-img", { y: "50%", ease: Linear.easeNone })
+  .addTo(controller2);
+
+new ScrollMagic.Scene({ triggerElement: ".contact-page-hero" })
+  .setTween(".contact-page-hero-background", {
+    y: "50%",
+    ease: Linear.easeNone,
+  })
   .addTo(controller2);
