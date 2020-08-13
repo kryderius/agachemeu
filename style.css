@@ -1250,7 +1250,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 30px;
+  padding: 120px 30px 0px 30px;
   background-image: url("/img/background-2.jpg");
   background-size: cover;
   overflow: hidden;
@@ -2720,6 +2720,14 @@ footer {
   }
 
   /* ABOUT HERO ABOUT US PAGE DESKTOP */
+  .about-hero-text {
+    width: 50%;
+    padding: 0px 100px 0px 30px;
+    margin: 0;
+    position: inherit;
+    transform: unset;
+    top: 0;
+  }
   .about-hero {
     padding: 100px 120px;
   }
