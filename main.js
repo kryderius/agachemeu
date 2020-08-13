@@ -39,6 +39,8 @@ var aboutPageHeroImg = new TimelineMax();
 var aboutPageSection1Img = new TimelineMax();
 var aboutHeroText = new TimelineMax();
 var aboutSection1Text = new TimelineMax();
+var contactPageText = new TimelineMax();
+var contactPageIcons = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -266,6 +268,18 @@ aboutSection1Text
   .from("#about-hero-section-h1", 0.5, { y: "30px", opacity: 0 }, "-=0.2")
   .from("#about-hero-section-p", 0.5, { x: "50px", opacity: 0 }, "-=0.2");
 
+contactPageText.from("#contact-page-section1-h3", 0.5, {
+  y: "-30px",
+  opacity: 0,
+});
+
+contactPageIcons.staggerFrom(
+  ".contact-page-section1-address",
+  0.5,
+  { y: "-30px", opacity: 0, stagger: "0.2" },
+  "-=0.2"
+);
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -461,6 +475,19 @@ const scene26 = new ScrollMagic.Scene({
   triggerHook: 0.75,
 })
   .setTween(aboutSection1Text)
+  .addTo(controller);
+
+const scene27 = new ScrollMagic.Scene({
+  triggerElement: ".contact-page-section1",
+  triggerHook: 0.75,
+})
+  .setTween(contactPageText)
+  .addTo(controller);
+const scene28 = new ScrollMagic.Scene({
+  triggerElement: ".contact-page-section1-icons",
+  triggerHook: 0.75,
+})
+  .setTween(contactPageIcons)
   .addTo(controller);
 
 var pinNav = new ScrollMagic.Scene({

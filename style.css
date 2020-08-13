@@ -1343,10 +1343,21 @@ footer {
 
 /* ABOUT PAGE SECTION1 MOBILE */
 .about-page-section1 {
+  position: relative;
   padding: 50px 30px;
   display: flex;
   flex-direction: column-reverse;
   overflow: hidden;
+}
+.about-page-section1::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 20px;
+  width: 100%;
+  z-index: -1;
+  height: 500px;
+  background: #f2f2f2;
 }
 .about-page-section1-imgs {
   width: 100%;
@@ -1723,7 +1734,7 @@ footer {
   }
   .odor-stop-text {
     width: 50%;
-    padding: 0px 30px 0px 0px;
+    padding: 0px 100px 0px 0px;
   }
   #mobiletoilet-h3 {
     font-size: 38px;
@@ -2236,6 +2247,16 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .about-page-section1::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 220px;
+    width: 100%;
+    z-index: -1;
+    height: 500px;
+    background: #f2f2f2;
+  }
   .about-page-section1-imgs {
     width: 45%;
     position: relative;
@@ -2436,6 +2457,12 @@ footer {
   .contact-page-section1-address {
     width: 33%;
   }
+  .contact-page-section1-address:nth-child(1) {
+    border-right: 2px #f2f2f2 solid;
+  }
+  .contact-page-section1-address:nth-child(2) {
+    border-right: 2px #f2f2f2 solid;
+  }
 }
 
 /* Desktop */
@@ -2563,7 +2590,7 @@ footer {
   }
   .odor-stop-text {
     width: 50%;
-    padding: 0px 30px 0px 0px;
+    padding: 0px 100px 0px 0px;
   }
   #mobiletoilet-h3 {
     font-size: 64px;
