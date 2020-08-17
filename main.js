@@ -41,6 +41,11 @@ var aboutHeroText = new TimelineMax();
 var aboutSection1Text = new TimelineMax();
 var contactPageText = new TimelineMax();
 var contactPageIcons = new TimelineMax();
+var odorstopImg = new TimelineMax();
+var odorstopText = new TimelineMax();
+var odorstopSection2Text = new TimelineMax();
+var odorstopSection4Text = new TimelineMax();
+var odorstopSection3Text = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -280,6 +285,85 @@ contactPageIcons.staggerFrom(
   "-=0.2"
 );
 
+odorstopSection2Text
+  .from("#odorstop-section2-p", 0.5, {
+    y: "100%",
+  })
+  .from(
+    ".odorstop-section2-row2 #odorstop-section2-p",
+    0.5,
+    {
+      y: "100%",
+    },
+    "-=0.2"
+  )
+  .from(
+    ".odorstop-section2-row3 #odorstop-section2-p",
+    0.5,
+    {
+      y: "100%",
+    },
+    "-=0.2"
+  )
+  .from(
+    ".odorstop-section2-row4 #odorstop-section2-p",
+    0.5,
+    {
+      y: "100%",
+    },
+    "-=0.2"
+  );
+
+odorstopImg.fromTo("#odorstop-section1-img", 1, { y: "50px" }, { y: "-50px" });
+
+odorstopText
+  .from("#odorstop-section1-span-h3", 0.5, {
+    y: "100%",
+    ease: Power2.easeInOut,
+  })
+  .from(
+    "#odorstop-section1-span-h1",
+    0.5,
+    {
+      y: "100%",
+      ease: Power2.easeInOut,
+    },
+    "-=0.1"
+  );
+
+odorstopSection4Text.from("#odorstop-section4-p", 0.5, {
+  y: "50px",
+  opacity: 0,
+  ease: Power2.easeInOut,
+});
+
+odorstopSection3Text
+  .from("#odorstop-section3-h3", 0.5, {
+    y: "-50px",
+    opacity: 0,
+    ease: Power2.easeInOut,
+  })
+  .from(
+    "#odorstop-section3-h2",
+    0.5,
+    {
+      y: "-50px",
+      opacity: 0,
+      ease: Power2.easeInOut,
+    },
+    "-=0.2"
+  )
+  .from(
+    "#odorstop-section3-p",
+    0.5,
+    {
+      x: "-50px",
+      opacity: 0,
+      ease: Power2.easeInOut,
+    },
+    "-=0.2"
+  );
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -491,6 +575,40 @@ const scene28 = new ScrollMagic.Scene({
   .setTween(contactPageIcons)
   .addTo(controller);
 
+const scene29 = new ScrollMagic.Scene({
+  triggerElement: ".odorstop-section1-img",
+  triggerHook: 0.5,
+  duration: "100%",
+})
+  .setTween(odorstopImg)
+  .addTo(controller);
+const scene30 = new ScrollMagic.Scene({
+  triggerElement: ".odorstop-section1",
+  triggerHook: 0.5,
+})
+  .setTween(odorstopText)
+  .addTo(controller);
+
+const scene31 = new ScrollMagic.Scene({
+  triggerElement: ".odorstop-section2",
+  triggerHook: 0.5,
+})
+  .setTween(odorstopSection2Text)
+  .addTo(controller);
+
+const scene32 = new ScrollMagic.Scene({
+  triggerElement: ".odorstop-section4-text",
+  triggerHook: 0.75,
+})
+  .setTween(odorstopSection4Text)
+  .addTo(controller);
+const scene33 = new ScrollMagic.Scene({
+  triggerElement: ".odorstop-section3-text",
+  triggerHook: 0.75,
+})
+  .setTween(odorstopSection3Text)
+  .addTo(controller);
+
 var pinNav = new ScrollMagic.Scene({
   triggerElement: "nav",
   triggerHook: 0,
@@ -536,6 +654,12 @@ new ScrollMagic.Scene({ triggerElement: ".mobiletoilet-parallax" })
 
 new ScrollMagic.Scene({ triggerElement: ".contact-page-hero" })
   .setTween(".contact-page-hero-background", {
+    y: "50%",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller2);
+new ScrollMagic.Scene({ triggerElement: ".odorstop-section4" })
+  .setTween(".odorstop-section4-background", {
     y: "50%",
     ease: Linear.easeNone,
   })
