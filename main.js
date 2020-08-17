@@ -405,6 +405,7 @@ const scene17 = new ScrollMagic.Scene({
   triggerHook: 0.5,
   duration: "100%",
 })
+
   .setTween(mobiletoiletImg)
   .addTo(controller);
 
@@ -417,7 +418,7 @@ const scene18 = new ScrollMagic.Scene({
 
 const scene19 = new ScrollMagic.Scene({
   triggerElement: ".mobiletoilet-features-section",
-  triggerHook: 0.5,
+  triggerHook: 0.75,
 })
   .setTween(mobiletoiletFeatures)
   .addTo(controller);
