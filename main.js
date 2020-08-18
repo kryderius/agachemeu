@@ -616,14 +616,14 @@ var pinNav = new ScrollMagic.Scene({
   .setPin("nav", { pushFollowers: false })
   .addTo(controller);
 /*
-const cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove", (e) => {
+  const cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove", (e) => {
   cursor.setAttribute(
     "style",
     "top: " + e.pageY + "px; left: " + e.pageX + "px;"
   );
-});
-*/
+  });
+  */
 
 /* PARALLAX */
 new ScrollMagic.Scene({ triggerElement: ".parallax-section" })
