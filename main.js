@@ -102,7 +102,7 @@ heroSvg2.from("#camper", 1, {
 nav
   .to("nav", 0.5, {
     padding: "0% 3%",
-    height: "100px",
+    height: "80px",
     ease: Back.easeInOut,
   })
   .to(".logo", 0.2, { opacity: 1 })

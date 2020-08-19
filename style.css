@@ -187,6 +187,7 @@ nav {
 }
 .logo img {
   height: 100%;
+  width: auto;
 }
 .translations-mobile {
   width: 233px;
