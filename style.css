@@ -8,6 +8,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1,
 h2,
@@ -464,13 +466,13 @@ nav {
 /* PRODUCT SECTION */
 .product-section {
   padding: 50px 30px;
-  background-image: url("/img/white-bg-reversed.png");
+  /*background-image: url("/img/white-bg-reversed.png");*/
   background-size: cover;
   background-position: top;
 }
 .product-section2 {
   padding: 50px 30px;
-  background-image: url("/img/white-bg.png");
+  /*background-image: url("/img/white-bg.png");*/
   background-size: cover;
   background-position: bottom;
   z-index: 10;
@@ -1806,6 +1808,199 @@ footer {
 
 /* Tablets */
 @media screen and (min-width: 768px) {
+  #camper {
+    width: 60%;
+  }
+
+  .product-container {
+    flex-direction: row;
+  }
+  .mobiletoilet-img-wrapper {
+    width: 50%;
+    height: fit-content;
+  }
+  .mobiletoilet-text {
+    width: 50%;
+    padding-left: 5%;
+  }
+  #mobiletoilet-h3 {
+    margin: 0;
+  }
+  .odor-stop {
+    flex-direction: row-reverse;
+  }
+  .odor-stop-text {
+    width: 50%;
+    padding-right: 5%;
+  }
+  .image-gallery-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 150px);
+  }
+  #image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  #image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  #image3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  #image4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  #image5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  .image1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: auto;
+    margin: 0;
+  }
+
+  .image2 {
+    grid-column: 2/3;
+    grid-row: 1/5;
+    height: auto;
+    margin: 0;
+  }
+  .image3 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    height: auto;
+    margin: 0;
+  }
+  .image4 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    height: auto;
+    margin: 0;
+  }
+  .image5 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+    height: auto;
+    margin: 0;
+  }
+  #contact-img-svg {
+    width: 40%;
+  }
+  #contact-span1 {
+    left: 15%;
+  }
+  #contact-span2 {
+    right: 24%;
+  }
+  .mobiletoilet-features-img {
+    height: 600px;
+  }
+  .about-page-section1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-page-section1-imgs {
+    width: 50%;
+    margin-right: 10%;
+  }
+  .about-page-section1-text {
+    width: 50%;
+  }
+  .odorstop-section1-container {
+    flex-direction: row;
+  }
+  .odorstop-section1-img {
+    width: 40%;
+  }
+  .odorstop-section1-text {
+    width: 60%;
+  }
+  .odorstop-section2 {
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+  .odorstop-section2-row1 {
+    width: 33%;
+    height: 300px;
+    justify-content: center;
+    border-bottom: none;
+    border-right: 2px #ffffff solid;
+  }
+  .odorstop-section2-row2 {
+    width: 33%;
+    height: 300px;
+    justify-content: center;
+    border-bottom: none;
+    border-right: 2px #ffffff solid;
+  }
+  .odorstop-section2-row3 {
+    width: 33%;
+    height: 300px;
+    justify-content: center;
+    border-bottom: none;
+    border-right: 2px #ffffff solid;
+  }
+  .odorstop-section2-row4 {
+    width: 33%;
+    height: 300px;
+    justify-content: center;
+  }
+  .odorstop-section3-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .odorstop-section3-img {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #odorstop-section3-img {
+    width: 80%;
+    height: auto;
+  }
+  .odorstop-section3-text {
+    width: 50%;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 /* Laptops */
 @media screen and (min-width: 1024px) {
@@ -1852,6 +2047,7 @@ footer {
     z-index: 12;
   }
   #camper {
+    width: 80%;
     z-index: 10;
   }
 
@@ -1929,13 +2125,13 @@ footer {
   /* PRODUCTS SECTION */
 
   .product-section {
-    padding: 50px 80px;
-    background-image: url("/img/white-bg-reversed.png");
+    padding: 100px 80px;
+    /*background-image: url("/img/white-bg-reversed.png");*/
     background-size: cover;
   }
   .product-section2 {
-    padding: 50px 80px;
-    background-image: url("/img/white-bg.png");
+    padding: 100px 80px;
+    /*background-image: url("/img/white-bg.png");*/
     background-size: cover;
     background-position: bottom;
   }
@@ -1954,17 +2150,18 @@ footer {
   }
   .mobiletoilet-text {
     width: 50%;
-    padding-left: 50px;
+    padding-left: 10%;
   }
   .odor-stop {
     flex-direction: row-reverse;
   }
   .odor-stop-text {
     width: 50%;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 10% 0px 0px;
   }
   #mobiletoilet-h3 {
     font-size: 38px;
+    margin: 0;
   }
   #mobiletoilet-p {
     font-size: 18px;
@@ -2334,6 +2531,10 @@ footer {
   .googlemap-section iframe {
     height: 400px;
   }
+  #contact-img-svg {
+    width: 80%;
+    z-index: 12;
+  }
 
   /* FOOTER */
   footer {
@@ -2487,6 +2688,7 @@ footer {
   .about-page-section1-imgs {
     width: 45%;
     position: relative;
+    margin: 0;
   }
   .about-page-section1-image1 {
     padding-right: 15%;
@@ -2916,13 +3118,13 @@ footer {
   /* PRODUCTS SECTION */
 
   .product-section {
-    padding: 50px 120px;
-    background-image: url("/img/white-bg-reversed.png");
+    padding: 120px 120px;
+    /*background-image: url("/img/white-bg-reversed.png");*/
     background-size: cover;
   }
   .product-section2 {
-    padding: 50px 120px;
-    background-image: url("/img/white-bg.png");
+    padding: 120px 120px;
+    /*background-image: url("/img/white-bg.png");*/
     background-size: cover;
     background-position: bottom;
   }
@@ -2937,21 +3139,22 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
-    padding: 120px;
+    padding: 5%;
   }
   .mobiletoilet-text {
     width: 50%;
-    padding-left: 50px;
+    padding-left: 10%;
   }
   .odor-stop {
     flex-direction: row-reverse;
   }
   .odor-stop-text {
     width: 50%;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 10% 0px 0px;
   }
   #mobiletoilet-h3 {
     font-size: 64px;
+    margin: 0;
   }
   #mobiletoilet-p {
     font-size: 24px;
