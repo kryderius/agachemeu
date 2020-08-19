@@ -46,6 +46,7 @@ var odorstopText = new TimelineMax();
 var odorstopSection2Text = new TimelineMax();
 var odorstopSection4Text = new TimelineMax();
 var odorstopSection3Text = new TimelineMax();
+var agachemSpanText = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -364,6 +365,8 @@ odorstopSection3Text
     "-=0.2"
   );
 
+agachemSpanText.to("#agachem-span-text", 0.1, { x: "-40%" });
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -607,6 +610,14 @@ const scene33 = new ScrollMagic.Scene({
   triggerHook: 0.75,
 })
   .setTween(odorstopSection3Text)
+  .addTo(controller);
+
+const scene34 = new ScrollMagic.Scene({
+  triggerElement: "#agachem-span-text",
+  triggerHook: 0.75,
+  duration: "100%",
+})
+  .setTween(agachemSpanText)
   .addTo(controller);
 
 var pinNav = new ScrollMagic.Scene({

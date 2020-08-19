@@ -465,10 +465,24 @@ nav {
 }
 /* PRODUCT SECTION */
 .product-section {
-  padding: 50px 30px;
+  position: relative;
+  padding: 50px 30px 100px 30px;
   /*background-image: url("/img/white-bg-reversed.png");*/
   background-size: cover;
   background-position: top;
+  overflow: hidden;
+}
+#agachem-span-text {
+  position: absolute;
+  left: 5%;
+  bottom: -1%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 82px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  color: #f2f2f2;
+  z-index: -1;
+  transition: transform 0.01s ease-in-out;
 }
 .product-section2 {
   padding: 50px 30px;
@@ -2128,6 +2142,17 @@ footer {
     padding: 100px 80px;
     /*background-image: url("/img/white-bg-reversed.png");*/
     background-size: cover;
+  }
+  #agachem-span-text {
+    position: absolute;
+    left: 30%;
+    bottom: -5%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 200px;
+    letter-spacing: 40px;
+    font-weight: bolder;
+    color: #f2f2f2;
+    z-index: -1;
   }
   .product-section2 {
     padding: 100px 80px;
