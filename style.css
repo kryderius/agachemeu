@@ -1807,6 +1807,7 @@ footer {
   padding: 100px 30px 100px 0px;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .mobiletoilet-section5-container {
   position: relative;
