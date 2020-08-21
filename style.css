@@ -1837,6 +1837,30 @@ footer {
   height: auto;
 }
 
+/* VIDEO PAGE MOBILE */
+.video-page-background {
+  background-image: url("/img/video-page-hero-bg.jpg") !important;
+  background-size: cover;
+}
+.video-page-section1 {
+  padding: 100px 30px;
+}
+.video1 {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.video2 {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.video3 {
+  width: 100%;
+}
+#video-iframe {
+  width: 100%;
+  height: 100%;
+}
+
 /*
 .products-hero-odorstop::before {
   content: "";
@@ -2053,6 +2077,24 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .video-page-section1 {
+    padding: 100px 30px;
+  }
+  .video1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .video2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .video3 {
+    width: 100%;
+  }
+  #video-iframe {
+    width: 100%;
+    height: 400px;
   }
 }
 /* Laptops */
@@ -3103,6 +3145,25 @@ footer {
     width: 250px;
     right: -200px;
   }
+  /* VIDEO PAGE SECTION1 */
+  .video-page-section1 {
+    padding: 100px 80px;
+  }
+  .video1 {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .video2 {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .video3 {
+    width: 100%;
+  }
+  #video-iframe {
+    width: 100%;
+    height: 600px;
+  }
 }
 
 /* Desktop */
@@ -3620,5 +3681,10 @@ footer {
   .mobiletoilet-section5-img {
     width: 350px;
     right: -300px;
+  }
+
+  /* VIDEO PAGE SECTION1 */
+  .video-page-section1 {
+    padding: 100px 120px;
   }
 }
