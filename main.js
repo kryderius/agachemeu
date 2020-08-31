@@ -717,12 +717,12 @@ new ScrollMagic.Scene({ triggerElement: ".image-gallery" })
   })
   .addTo(controller2);
 
-/*new ScrollMagic.Scene({ triggerElement: ".awards-section" })
+new ScrollMagic.Scene({ triggerElement: ".awards-section" })
   .setTween(".awards-parallax-img", {
     y: "30%",
     ease: Linear.easeNone,
   })
-  .addTo(controller2);*/
+  .addTo(controller2);
 
 new ScrollMagic.Scene({ triggerElement: ".mobiletoilet-parallax" })
   .setTween(".mobiletoilet-parallax-img", { y: "50%", ease: Linear.easeNone })
