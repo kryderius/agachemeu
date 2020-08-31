@@ -47,12 +47,18 @@ var odorstopSection2Text = new TimelineMax();
 var odorstopSection4Text = new TimelineMax();
 var odorstopSection3Text = new TimelineMax();
 var agachemSpanText = new TimelineMax();
+var mobiletoiletMoreImg = new TimelineMax();
+var mobiletoiletGallery = new TimelineMax();
+var mobiletoiletGallerySpan = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
 });
 var controller3 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "50%", duration: "50%" },
+});
+var controller4 = new ScrollMagic.Controller({
+  globalSceneOptions: { triggerHook: "onEnter", duration: "100%" },
 });
 
 heroH1
@@ -365,7 +371,45 @@ odorstopSection3Text
     "-=0.2"
   );
 
+mobiletoiletGallery
+  .to("#mobiletoilet-gallery-span", 1, {
+    y: "100%",
+    ease: Power2.easeInOut,
+  })
+  .to(
+    ".mobiletoilet-gallery-image:nth-child(2) > #mobiletoilet-gallery-span",
+    1,
+    {
+      y: "100%",
+      ease: Power2.easeInOut,
+    },
+    "-=0.8"
+  )
+  .to(
+    ".mobiletoilet-gallery-image:nth-child(3) > #mobiletoilet-gallery-span",
+    1,
+    {
+      y: "100%",
+      ease: Power2.easeInOut,
+    },
+    "-=0.8"
+  )
+  .to(
+    ".mobiletoilet-gallery-image:nth-child(4) > #mobiletoilet-gallery-span",
+    1,
+    {
+      y: "100%",
+      ease: Power2.easeInOut,
+    },
+    "-=0.8"
+  );
+
 agachemSpanText.to("#agachem-span-text", 0.1, { x: "-40%" });
+mobiletoiletMoreImg.to(".mobiletoilet-section5-img", 0.1, { y: "-100px" });
+mobiletoiletGallerySpan.from("#mobiletoilet-gallery-p-span", 1, {
+  x: "-100vw",
+  ease: Power2.easeInOut,
+});
 
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
@@ -620,6 +664,27 @@ const scene34 = new ScrollMagic.Scene({
   .setTween(agachemSpanText)
   .addTo(controller);
 
+const scene35 = new ScrollMagic.Scene({
+  triggerElement: ".mobiletoilet-section5-container",
+  triggerHook: 0.75,
+  duration: "100%",
+})
+  .setTween(mobiletoiletMoreImg)
+  .addTo(controller);
+
+const scene36 = new ScrollMagic.Scene({
+  triggerElement: ".mobiletoilet-gallery-container",
+  triggerHook: 0.5,
+})
+  .setTween(mobiletoiletGallery)
+  .addTo(controller);
+const scene37 = new ScrollMagic.Scene({
+  triggerElement: ".mobiletoilet-gallery-text",
+  triggerHook: 0.75,
+})
+  .setTween(mobiletoiletGallerySpan)
+  .addTo(controller);
+
 var pinNav = new ScrollMagic.Scene({
   triggerElement: "nav",
   triggerHook: 0,
@@ -675,3 +740,12 @@ new ScrollMagic.Scene({ triggerElement: ".odorstop-section4" })
     ease: Linear.easeNone,
   })
   .addTo(controller2);
+
+new ScrollMagic.Scene({ triggerElement: ".odorstop-section3" })
+  .setTween("#odorstop-section3-img", {
+    scale: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller4);
+
+/*SWIPER*/
