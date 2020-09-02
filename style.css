@@ -294,10 +294,12 @@ nav {
   font-size: 12vh;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #f2f2f2;
+  color: transparent;
+  -webkit-text-stroke: 2px #f2f2f2;
   transform-origin: top right;
   transform: rotate(270deg) translateY(-100%);
   white-space: nowrap;
+  line-height: 80%;
   z-index: 9;
 }
 .hero-title p {
