@@ -1,6 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&family=Raleway:wght@200;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 /* Mobile */
 *,
 *::before,
@@ -195,7 +195,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 120px;
-  background-color: rgba(255, 255, 255, 0.8);
+  /*background-color: rgba(255, 255, 255, 0.8);*/
 }
 .logo {
   height: 80%;
@@ -235,6 +235,7 @@ nav {
   overflow: hidden;
   /*background-image: url("/img/hero-bg-white.svg");*/
   background-size: cover;
+  background-position-x: right;
 }
 
 .hero-img {
@@ -245,6 +246,7 @@ nav {
 }
 #hero-h1 {
   margin-bottom: 15px;
+  font-size: 48px;
 }
 #hero-h1::after {
   content: ".";
@@ -274,11 +276,13 @@ nav {
 }
 #hero-title-overlay {
   position: absolute;
+  width: auto;
   height: 100%;
   top: 0;
-  left: -50%;
-  opacity: 0.4;
+  left: -300px;
+  opacity: 0.8;
   z-index: -1;
+  pointer-events: none;
 }
 .hero-title p {
   position: relative;
@@ -2251,8 +2255,9 @@ footer {
   .hero {
     padding: 0;
     flex-direction: row;
-    background-image: url("/img/hero-bg-white.svg");
+    /*background-image: url("/img/hero-bg-white.svg");*/
     background-size: cover;
+    background-position-x: right;
   }
   #hero-title-overlay {
     left: 0;
@@ -3379,7 +3384,7 @@ footer {
   .hero {
     padding: 0;
     flex-direction: row;
-    background-image: url("/img/hero-bg-white.svg");
+    /*background-image: url("/img/hero-bg-white.svg");*/
     background-size: cover;
   }
   #hero-title-overlay {
