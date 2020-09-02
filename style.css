@@ -1,6 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&family=Raleway:wght@200;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 /* Mobile */
 *,
 *::before,
@@ -35,6 +35,7 @@ h3 {
 p {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
+  color: #464646;
 }
 li {
   text-decoration: none;
@@ -240,6 +241,7 @@ nav {
 
 .hero-img {
   text-align: center;
+  z-index: 10;
 }
 #camper {
   width: 80%;
@@ -273,6 +275,7 @@ nav {
 }
 .hero-title {
   position: relative;
+  z-index: 10;
 }
 #hero-title-overlay {
   position: absolute;
@@ -283,6 +286,19 @@ nav {
   opacity: 0.8;
   z-index: -1;
   pointer-events: none;
+}
+#agachem-professional {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #f2f2f2;
+  transform-origin: top right;
+  transform: rotate(270deg) translateY(-100%);
+  white-space: nowrap;
+  z-index: 9;
 }
 .hero-title p {
   position: relative;
