@@ -227,7 +227,7 @@ nav {
 /* HERO */
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   padding: 120px 30px 0px 30px;
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@ nav {
 }
 .mobiletoilet-hero {
   background-image: url("/img/landscape.jpg");
-  padding: 0px 30px;
+  padding: 130px 30px;
 }
 #mobiletoilet-hero-h1 {
   color: #f2f2f2;
@@ -1226,7 +1226,7 @@ a:hover ~ .cursor {
 .odorstop-hero {
   background-image: url("/img/OdorStop-hero-bg.jpg");
   background-position: center center;
-  padding: 0px 30px;
+  padding: 130px 30px;
 }
 .odorstop-section1 {
   overflow: hidden;
@@ -1543,7 +1543,7 @@ footer {
 .about-hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
