@@ -693,7 +693,7 @@ const scene37 = new ScrollMagic.Scene({
 
 const scene38 = new ScrollMagic.Scene({
   triggerElement: ".about-hero",
-  triggerHook: onEnter,
+  triggerHook: 1,
 })
   .setTween(mobiletoiletGallerySpan)
   .addTo(controller);
