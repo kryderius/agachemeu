@@ -50,6 +50,7 @@ var agachemSpanText = new TimelineMax();
 var mobiletoiletMoreImg = new TimelineMax();
 var mobiletoiletGallery = new TimelineMax();
 var mobiletoiletGallerySpan = new TimelineMax();
+var aboutHeroCover = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
@@ -411,6 +412,11 @@ mobiletoiletGallerySpan.from("#mobiletoilet-gallery-p-span", 1, {
   ease: Power2.easeInOut,
 });
 
+aboutHeroCover.to("#about-hero-cover", 1, {
+  x: "100%",
+  ease: Power4.easeInOut,
+});
+
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
 })
@@ -681,6 +687,13 @@ const scene36 = new ScrollMagic.Scene({
 const scene37 = new ScrollMagic.Scene({
   triggerElement: ".mobiletoilet-gallery-text",
   triggerHook: 0.75,
+})
+  .setTween(mobiletoiletGallerySpan)
+  .addTo(controller);
+
+const scene38 = new ScrollMagic.Scene({
+  triggerElement: ".about-hero",
+  triggerHook: onEnter,
 })
   .setTween(mobiletoiletGallerySpan)
   .addTo(controller);
