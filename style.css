@@ -1547,11 +1547,34 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 120px 30px 0px 30px;
-  background-image: url("/img/background-2.jpg");
-  background-size: cover;
+  padding: 120px 30px 120px 30px;
   overflow: hidden;
+}
+.about-hero-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  overflow: hidden;
+}
+.about-hero-background-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  top: -20%;
+  left: 0;
+  background-image: url("/img/About-Hero-Background.jpg");
+  background-size: cover;
+  background-position: center center;
+  transition: transform ease;
+}
+#about-hero-background-img {
+  position: absolute;
+  width: auto;
+  height: 120%;
+  top: -20%;
+  right: -200px;
 }
 .about-hero::before {
   content: "";
@@ -1560,28 +1583,12 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 0.30015756302521013) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 0.30015756302521013) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 0.30015756302521013) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
   z-index: 1;
 }
 .about-hero-text {
   z-index: 10;
-  margin-bottom: 30px;
+  background-color: #f2f2f2;
+  padding: 50px;
 }
 #about-hero-h3 {
   font-family: "Raleway", sans-serif;
@@ -1608,6 +1615,7 @@ footer {
   font-size: 18px;
 }
 .about-hero-imgs {
+  display: none;
   width: 100%;
   position: relative;
   width: 100%;
@@ -1642,7 +1650,7 @@ footer {
 /* ABOUT PAGE SECTION1 MOBILE */
 .about-page-section1 {
   position: relative;
-  padding: 50px 30px;
+  padding: 100px 30px;
   display: flex;
   flex-direction: column-reverse;
   overflow: hidden;
@@ -1651,7 +1659,7 @@ footer {
   position: absolute;
   content: "";
   left: 0;
-  top: 20px;
+  top: 80px;
   width: 100%;
   z-index: -1;
   height: 35%;
@@ -2266,6 +2274,17 @@ footer {
     width: 100%;
     height: 300px;
     background-color: #f2f2f2;
+  }
+  .about-hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-hero-text {
+    width: 50%;
+  }
+  #about-hero-background-img {
+    right: 0;
+    left: unset;
   }
 }
 /* Laptops */
@@ -2891,8 +2910,8 @@ footer {
     padding: 100px 80px;
   }
   .about-hero-text {
-    width: 50%;
-    padding: 0px 100px 0px 30px;
+    width: 60%;
+    padding: 50px 100px 50px 100px;
     margin: 0;
     position: inherit;
     transform: unset;
@@ -3806,8 +3825,8 @@ footer {
 
   /* ABOUT HERO ABOUT US PAGE DESKTOP */
   .about-hero-text {
-    width: 50%;
-    padding: 0px 100px 0px 30px;
+    width: 60%;
+    padding: 50px 100px 50px 100px;
     margin: 0;
     position: inherit;
     transform: unset;

@@ -748,4 +748,10 @@ new ScrollMagic.Scene({ triggerElement: ".odorstop-section3" })
   })
   .addTo(controller4);
 
+new ScrollMagic.Scene({ triggerElement: ".about-hero" })
+  .setTween(".about-hero-background-wrapper", {
+    y: "20%",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller2);
 /*SWIPER*/
