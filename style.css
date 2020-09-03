@@ -1705,8 +1705,9 @@ footer {
   padding: 0px 30px;
 }
 .products-hero-mobiletoilet-img {
-  background-image: url("/img/mobiletoilet-gallery-1.jpg");
+  background-image: url("/img/products/MobileToilet_IMG7_1920-whitebg.jpg");
   background-size: cover;
+  background-position-y: 70%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1726,7 +1727,7 @@ footer {
   padding: 0px 30px;
 }
 .products-hero-odorstop-img {
-  background-image: url("/img/OdorStop1.png");
+  background-image: url("/img/products/OdorStop-IMG1-800.png");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -2278,7 +2279,8 @@ footer {
     background-position-x: right;
   }
   #hero-title-overlay {
-    left: 0;
+    right: 50vw;
+    left: unset;
     z-index: 8;
   }
   .hero-title {
@@ -2404,7 +2406,7 @@ footer {
     left: 30%;
     bottom: -5%;
     font-family: "Montserrat", sans-serif;
-    font-size: 200px;
+    font-size: 14vw;
     letter-spacing: 40px;
     font-weight: bolder;
     color: #f2f2f2;
@@ -3005,7 +3007,7 @@ footer {
     align-items: center;
   }
   .products-hero-mobiletoilet {
-    width: 100%;
+    width: 50%;
     height: 100%;
     position: relative;
     display: flex;
@@ -3017,7 +3019,7 @@ footer {
     overflow: hidden;
   }
   .products-hero-mobiletoilet-img {
-    background-image: url("/img/mobiletoilet-gallery-1.jpg");
+    background-image: url("/img/products/MobileToilet_IMG7_1920-whitebg.jpg");
     background-size: cover;
     position: absolute;
     top: 0;
@@ -3028,7 +3030,7 @@ footer {
     transition: transform 0.5s ease;
   }
   .products-hero-odorstop {
-    width: 100%;
+    width: 50%;
     height: 100%;
     position: relative;
     display: flex;
@@ -3040,7 +3042,8 @@ footer {
     overflow: hidden;
   }
   .products-hero-odorstop-img {
-    background-image: url("/img/OdorStop1.png");
+    background-image: url("/img/products/OdorStop-IMG1-800.png");
+    background-position: center center;
     background-size: cover;
     position: absolute;
     top: 0;
