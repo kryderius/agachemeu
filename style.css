@@ -1568,6 +1568,7 @@ footer {
   background-size: cover;
   background-position: center center;
   transition: transform ease;
+  backface-visibility: hidden;
 }
 #about-hero-cover {
   position: absolute;
