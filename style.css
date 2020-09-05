@@ -380,6 +380,10 @@ nav {
   background-image: url("/img/landscape.jpg");
   padding: 130px 30px;
 }
+.mobiletoilet-hero::before,
+.mobiletoilet-hero::after {
+  display: none;
+}
 #mobiletoilet-hero-h1 {
   color: #f2f2f2;
   font-size: 48px;
@@ -1255,6 +1259,10 @@ a:hover ~ .cursor {
   background-image: url("/img/OdorStop-hero-bg.jpg");
   background-position: center center;
   padding: 130px 30px;
+}
+.odorstop-hero::before,
+.odorstop-hero::after {
+  display: none;
 }
 .odorstop-section1 {
   overflow: hidden;
