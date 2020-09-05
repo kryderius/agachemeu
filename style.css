@@ -1568,7 +1568,6 @@ footer {
   background-size: cover;
   background-position: center center;
   transition: transform ease;
-  backface-visibility: hidden;
 }
 #about-hero-cover {
   position: absolute;
@@ -1700,6 +1699,20 @@ footer {
 #section1-image2 {
   width: 100%;
   height: auto;
+}
+
+/* ABOUT  PAGE SECTION2 MOBILE */
+.about-page-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+.about-page-section2-img {
+  width: 100%;
+}
+#about-page-section2-img {
+  width: 100%;
 }
 
 /* PRODUCTS PAGE MOBILE */

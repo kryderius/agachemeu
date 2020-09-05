@@ -412,10 +412,15 @@ mobiletoiletGallerySpan.from("#mobiletoilet-gallery-p-span", 1, {
   ease: Power2.easeInOut,
 });
 
-aboutHeroCover.to("#about-hero-cover", 1, {
-  x: "100%",
-  ease: Power4.easeInOut,
-});
+aboutHeroCover.to(
+  "#about-hero-cover",
+  1,
+  {
+    x: "100%",
+    ease: Power4.easeInOut,
+  },
+  "+1"
+);
 
 const scene = new ScrollMagic.Scene({
   triggerElement: "onEnter",
