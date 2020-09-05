@@ -234,9 +234,33 @@ nav {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
-  /*background-image: url("/img/hero-bg-white.svg");*/
+  background-image: url("/img/products/Hero-Mapa-Homepage.jpg");
   background-size: cover;
-  background-position-x: right;
+  background-position: center center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40vw 40vw 0 0;
+  border-color: #ffffff transparent transparent transparent;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 40vw 40vw;
+  border-color: transparent transparent #ffffff transparent;
 }
 
 .hero-img {
@@ -249,6 +273,7 @@ nav {
 #hero-h1 {
   margin-bottom: 15px;
   font-size: 48px;
+  color: white;
 }
 #hero-h1::after {
   content: ".";
@@ -286,6 +311,7 @@ nav {
   opacity: 0.8;
   z-index: -1;
   pointer-events: none;
+  display: none;
 }
 #agachem-professional {
   position: absolute;
@@ -301,9 +327,11 @@ nav {
   white-space: nowrap;
   line-height: 80%;
   z-index: 9;
+  display: none;
 }
 .hero-title p {
   position: relative;
+  color: white;
 }
 .hero-title p span {
   position: absolute;
@@ -315,7 +343,7 @@ nav {
 }
 #hero-link {
   text-decoration: none;
-  color: black;
+  color: white;
   position: relative;
   overflow: hidden;
 }
@@ -1736,7 +1764,7 @@ footer {
   padding: 0px 30px;
 }
 .products-hero-mobiletoilet-img {
-  background-image: url("/img/products/MobileToilet_IMG7_1920-whitebg.jpg");
+  background-image: url("/img/products/MobileToilet-IMG1-800.png");
   background-size: cover;
   background-position-y: 70%;
   position: absolute;
@@ -2041,7 +2069,9 @@ footer {
   #hero-title-overlay {
     right: 10%;
   }
-
+  #agachem-professional {
+    display: inline-block;
+  }
   .product-container {
     flex-direction: row;
   }
@@ -2316,9 +2346,12 @@ footer {
   .hero {
     padding: 0;
     flex-direction: row;
-    /*background-image: url("/img/hero-bg-white.svg");*/
-    background-size: cover;
-    background-position-x: right;
+  }
+  .hero::before {
+    border-width: 20vw 20vw 0 0;
+  }
+  .hero::after {
+    border-width: 0 0 20vw 20vw;
   }
   #hero-title-overlay {
     right: 50vw;
@@ -3061,7 +3094,7 @@ footer {
     overflow: hidden;
   }
   .products-hero-mobiletoilet-img {
-    background-image: url("/img/products/MobileToilet_IMG7_1920-whitebg.jpg");
+    background-image: url("/img/products/MobileToilet-IMG1-800.png");
     background-size: cover;
     position: absolute;
     top: 0;
