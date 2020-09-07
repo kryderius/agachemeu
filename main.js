@@ -700,7 +700,7 @@ const scene38 = new ScrollMagic.Scene({
   triggerElement: ".about-hero",
   triggerHook: 1,
 })
-  .setTween(mobiletoiletGallerySpan)
+  .setTween(aboutHeroCover)
   .addTo(controller);
 
 var pinNav = new ScrollMagic.Scene({

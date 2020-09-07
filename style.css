@@ -599,10 +599,12 @@ nav {
 .mobiletoilet-text {
   position: relative;
   transition: transform 0.5s ease-in-out;
+  margin-top: 50px;
 }
 .odor-stop-text {
   position: relative;
   transition: transform 0.5s ease-in-out;
+  margin-top: 50px;
 }
 #mobiletoilet-img {
   width: 70%;
@@ -622,11 +624,25 @@ nav {
 }
 #mobiletoilet-h3 {
   font-size: 62px;
-  margin-top: 60px;
 }
 #mobiletoilet-h3::after {
   content: ".";
   color: #59db09;
+}
+#subheading-h1 {
+  position: relative;
+  font-size: 22px;
+  color: #59db09;
+  margin-bottom: 15px;
+}
+#subheading-h1::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -45px;
+  width: 30px;
+  height: 2px;
+  background-color: #59db09;
 }
 .product-btn {
   width: 183px;
@@ -3387,7 +3403,7 @@ footer {
     align-items: center;
   }
   .odorstop-section4-text-btns {
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
   }
