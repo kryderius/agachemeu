@@ -885,6 +885,7 @@ a:hover ~ .cursor {
   position: relative;
   overflow: hidden;
 }
+/*
 .awards-section::before {
   content: "";
   position: absolute;
@@ -895,6 +896,7 @@ a:hover ~ .cursor {
   background-color: rgba(0, 0, 102, 0.6);
   z-index: 1;
 }
+*/
 .awards-parallax-img {
   position: absolute;
   background-image: url("/img/Wiatr-i-Woda-nagroda-bg.jpg");
