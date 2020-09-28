@@ -1629,9 +1629,9 @@ footer {
   height: 120%;
   top: -20%;
   left: 0;
-  background-image: url("/img/About-Hero-Background.jpg");
+  background-image: url("/img/heroooo6.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   transition: transform ease;
 }
 #about-hero-cover {
