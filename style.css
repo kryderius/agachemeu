@@ -2099,6 +2099,25 @@ footer {
   z-index: -1;
 }*/
 
+/*404*/
+.error-main {
+  padding: 100px 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#error-p-big {
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+#error-p-small {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
 /* Tablets */
 @media screen and (min-width: 768px) {
   #camper {
@@ -3510,6 +3529,23 @@ footer {
     top: -50px;
     right: -50px;
     z-index: -10;
+  }
+  /*404*/
+  .error-main {
+    padding: 100px 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #error-p-big {
+    font-size: 72px;
+    margin-bottom: 30px;
+  }
+  #error-p-small {
+    font-size: 32px;
+    margin-bottom: 50px;
   }
 }
 
