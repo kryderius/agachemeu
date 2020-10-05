@@ -1,0 +1,36 @@
+Strona główna:
+PL: <link rel="alternate" hreflang="pl" href="http://agachem.eu/index.html" />
+EN: <link rel="alternate" hreflang="en" href="http://agachem.eu/en/index.html" />
+DE: <link rel="alternate" hreflang="de" href="http://agachem.eu/de/index.html" />
+CZ: <link rel="alternate" hreflang="cs" href="http://agachem.eu/cz/index.html" />
+
+O nas:
+PL: <link rel="alternate" hreflang="pl" href="http://agachem.eu/o-nas.html" />
+EN: <link rel="alternate" hreflang="en" href="http://agachem.eu/en/about-us.html" />
+DE: <link rel="alternate" hreflang="de" href="http://agachem.eu/de/uber-uns.html" />
+CZ: <link rel="alternate" hreflang="cs" href="http://agachem.eu/cz/o-nas.html" />
+
+Produkty:
+PL: <link rel="alternate" hreflang="pl" href="http://agachem.eu/produkty.html" />
+EN: <link rel="alternate" hreflang="en" href="http://agachem.eu/en/products.html" />
+DE: <link rel="alternate" hreflang="de" href="http://agachem.eu/de/produkte.html" />
+CZ: <link rel="alternate" hreflang="cs" href="http://agachem.eu/cz/index.html" />
+
+MobileToilet:
+PL: <link rel="alternate" hreflang="pl" href="http://agachem.eu/mobiletoilet.html" />
+EN: <link rel="alternate" hreflang="en" href="http://agachem.eu/en/mobiletoilet.html" />
+DE: <link rel="alternate" hreflang="de" href="http://agachem.eu/de/mobiletoilet.html" />
+CZ: <link rel="alternate" hreflang="cs" href="http://agachem.eu/cz/mobiletoilet.html" />
+
+OdorStop:
+PL: <link rel="alternate" hreflang="pl" href="http://agachem.eu/odorstop.html" />
+EN: <link rel="alternate" hreflang="en" href="http://agachem.eu/en/odorstop.html" />
+DE: <link rel="alternate" hreflang="de" href="http://agachem.eu/de/odorstop.html" />
+CZ: <link rel="alternate" hreflang="cs" href="http://agachem.eu/cz/odorstop.html" />
+
+Kontakt:
+PL: <link rel="alternate" hreflang="pl" href="http://agachem.eu/kontakt.html" />
+EN: <link rel="alternate" hreflang="en" href="http://agachem.eu/en/contact.html" />
+DE: <link rel="alternate" hreflang="de" href="http://agachem.eu/de/kontakt.html" />
+CZ: <link rel="alternate" hreflang="cs" href="http://agachem.eu/cz/kontakt.html" />
+
