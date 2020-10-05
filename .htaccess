@@ -2,5 +2,4 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteRule ^([^\.]+)$ $1.html [NC, L] 
-
-Redirect 301 /pl/index.html https://mystifying-noyce-4a8917.netlify.app/
+RewriteRule /pl/index.html /index.html [L,R=301]
