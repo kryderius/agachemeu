@@ -3,5 +3,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteRule ^([^\.]+)$ $1.html [NC, L] 
 RewriteRule /pl/index.html /index.html [L,R=301]
-
+ErrorDoc 404 /404.html
 RewriteEngine 404 /404.html
