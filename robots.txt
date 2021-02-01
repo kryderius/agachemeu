@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /cookies.html
+Disallow: /polityka-prywatnosci.html
+Allow: /
+
+Sitemap: http://agachem.eu/sitemap.xml
